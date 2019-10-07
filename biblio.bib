@@ -6,6 +6,7 @@ title = {{Deep Generative Models for Detecting Differential Expression in Single
 year = {2019},
 month={October},
 projects="scVI",
+addendum={\href{https://www.biorxiv.org/content/10.1101/794289v1}{\scriptsize [PDF]}},
 url_pdf = {https://www.biorxiv.org/content/10.1101/794289v1},
 abstract = "Detecting differentially expressed genes is important for characterizing subpopulations of cells. However, in scRNA-seq data, nuisance variation due to technical factors like sequencing depth and RNA capture efficiency obscures the underlying biological signal. First, we show that deep generative models, which combined Bayesian statistics and deep neural networks, better estimate the log-fold-change in gene expression levels between subpopulations of cells. Second, we use Bayesian decision theory to detect differentially expressed genes while controlling the false discovery rate. Our experiments on simulated and real datasets show that our approach out-performs state-of-the-art DE frameworks. Finally, we introduce a technique for improving the posterior approximation, and show that it also improves differential expression performance.",
 }
@@ -17,6 +18,8 @@ journal = {Submitted},
 title = {{Detecting Zero-Inflated Genes in Single-Cell Transcriptomics Data}},
 year = {2019},
 month={October},
+addendum={\href{https://www.biorxiv.org/content/10.1101/794875v1}{\scriptsize [PDF]}},
+url_pdf = {https://www.biorxiv.org/content/10.1101/794875v1},
 abstract = "In single-cell RNA sequencing data, biological processes or technical factors may induce an overabundance of zero measurements. Existing probabilistic approaches to interpreting these data either model all genes as zero-inflated, or none. But the overabundance of zeros might be gene-specific. Hence, we propose the AutoZI model, which, for each gene, places a spike-and-slab prior on a mixture assignment between a negative binomial (NB) component and a zero-inflated negative binomial (ZINB) component. We approximate the posterior distribution under this model using variational inference, and employ Bayesian decision theory to decide whether each gene is zero-inflated. On simulated data, AutoZI outperforms the alternatives. On negative control data, AutoZI retrieves predictions consistent to a previous study on ERCC spike-ins and recovers similar results on control RNAs. Applied to several datasets and instances of the 10x Chromium protocol, AutoZI allows both biological and technical interpretations of zero-inflation. Finally, AutoZI's decisions on mouse embyronic stem-cells suggest that zero-inflation might be due to transcriptional bursting.",
 }
 
@@ -27,6 +30,7 @@ journal = {Submitted},
 title = {{A Joint Model of RNA Expression and Surface Protein Abundance in Single Cells}},
 year = {2019},
 month={October},
+addendum={\href{https://www.biorxiv.org/content/10.1101/791947v1}{\scriptsize [PDF]}},
 url_pdf={https://www.biorxiv.org/content/10.1101/791947v1},
 abstract = "Cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq) combines unbiased single-cell transcriptome measurements with surface protein quantification comparable to flow cytometry, the gold standard for cell type identification. However, current analysis pipelines cannot address the two primary challenges of CITE-seq data: combining both modalities in a shared latent space that harnesses the power of the paired measurements, and handling the technical artifacts of the protein measurement, which is obscured by non-negligible background noise. Here we present Total Variational Inference (totalVI), a fully probabilistic end-to-end framework for normalizing and analyzing CITE-seq data, based on a hierarchical Bayesian model. In totalVI, the mRNA and protein measurements for each cell are generated from a low-dimensional latent random variable unique to that cell, representing its cellular state. totalVI uses deep neural networks to specify conditional distributions. By leveraging advances in stochastic variational inference, it scales easily to millions of cells. Explicit modeling of nuisance factors enables totalVI to produce denoised data in both domains, as well as a batch-corrected latent representation of cells for downstream analysis tasks.",
 }
