@@ -26,14 +26,18 @@ bio: My research interests lie at the intersection of statistics, computation an
 
 interests:
 - Machine Learning
-- Computational Biology
 - Applied Statistics
+- Computational Biology
+
 
 education:
   courses:
+  - course: PhD in Electrical Engineering & Computer Sciences
+    institution: University of California, Berkeley
   - course: MSc in Applied Mathematics
     institution: Ecole polytechnique, France
     year: 2016
+
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -69,4 +73,12 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD student advised by [Mike Jordan](https://people.eecs.berkeley.edu/~jordan/) & [Nir Yosef](https://niryosef.wordpress.com/). My research interests lie at the intersection of statistics, computation and modeling. A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing biological data, with a focus on single-cell transcriptomics. I am the lead contributor to [single-cell Variational Inference (scVI)](https://github.com/YosefLab/scVI), a software for fully-probabilistic modeling of scRNA-seq data. I also did several internship at [Ant Financial]([https://www.antfin.com/index.htm?locale=en_us) in Hangzhou and [Amazon](https://www.aboutamazon.com/research) in Berkeley on counterfactual inference and offline policy learning methods. I was born and grew up in Bedarieux, France. 
+I am a fifth year PhD candidate in the department of Electrical Engineering and Computer Sciences at [UC Berkeley](https://eecs.berkeley.edu/) advised by [Mike Jordan](https://people.eecs.berkeley.edu/~jordan/) & [Nir Yosef](https://niryosef.wordpress.com/). My research interests lie at the intersection of statistics, computation and modeling. 
+
+A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing biological data, with a focus on transcriptomics. I am a lead contributor to [single-cell variational inference (scvi-tools)](https://scvi-tools.org), a set of tools for fully-probabilistic modeling of scRNA-seq data. To learn more about scVI, check out this [Bioinformatics chat episode](https://bioinformatics.chat/scvi) or this [feature in Nature Methods](https://www.nature.com/articles/s41592-018-0230-9). 
+
+Aside from that, I am interested in the broader area of ML + Science. Deep generative models provide an appealing and flexible paradigm for learning distributions, but quite some work is needed to fully exploit them as part of a [scientific hypothesis testing pipeline](https://www.embopress.org/doi/epdf/10.15252/msb.20199198) (e.g., interpretability, disentanglement, decision-making). 
+
+Previously, I worked on counterfactual inference and offline policy learning methods in collaboration with technology companies. In 2018, I visited [Le Song](https://www.cc.gatech.edu/~lsong/) at [Ant Financial]([https://www.antfin.com/index.htm?locale=en_us) in Hangzhou. In 2019, I visited [Inderjit Dhillon](https://www.cs.utexas.edu/~inderjit/) at [Amazon](https://www.aboutamazon.com/research) in Berkeley. 
+
+Before graduate school, I obtained a MSc in applied mathematics from [Ecole polytechnique, Palaiseau](https://www.polytechnique.edu) in 2016. Additionally, I worked as an intern at the [Harvard Medical School](https://hms.harvard.edu) with [Allon Klein](https://www.klein.hms.harvard.edu/) in 2016. I was born and grew up in Bedarieux, France. 
