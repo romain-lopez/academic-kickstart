@@ -6,27 +6,26 @@ name: Romain Lopez
 authors:
 - admin
 
-# Is this the primary user of the site?
+# Is this the primary user of tgraduated from my phdhe site?
 superuser: true
 
 # Role/position
-role: Ph.D. candidate
+role: Postdoctoral Scholar
 
 # Organizations/Affiliations
 organizations:
-- name: EECS @UC Berkeley
-  url: "https://eecs.berkeley.edu/"
-- name: Berkeley AI Research
-  url: "http://bair.berkeley.edu/"
-- name: Center for Computational Biology
-  url: "http://ccb.berkeley.edu" 
+- name: Genentech Research & Early Development
+  url: "https://www.gene.com/scientists"
+- name: Department of Genetics @ Stanford University
+  url: "https://med.stanford.edu/genetics.html"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests lie at the intersection of statistics, computation and modeling. A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing biological data, with a focus on single-cell transcriptomics.
 
 interests:
-- Machine Learning
-- Applied Statistics
+- Machine Learning + Science
+- Applied Statistics 
+- Counterfactual Inference
 - Computational Biology
 
 
@@ -34,6 +33,7 @@ education:
   courses:
   - course: PhD in Electrical Engineering & Computer Sciences
     institution: University of California, Berkeley
+    year: 2021
   - course: MSc in Applied Mathematics
     institution: Ecole polytechnique, France
     year: 2016
@@ -46,7 +46,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:romain_lopez@berkeley.edu'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:romainl@stanford.edu'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/_romain_lopez_
@@ -73,12 +73,10 @@ user_groups:
 - Visitors
 ---
 
-I am a fifth year PhD candidate in the department of Electrical Engineering and Computer Sciences at [UC Berkeley](https://eecs.berkeley.edu/) advised by [Mike Jordan](https://people.eecs.berkeley.edu/~jordan/) & [Nir Yosef](https://niryosef.wordpress.com/). My research interests lie at the intersection of statistics, computation and modeling. 
+Since Fall 2021, I am a joint postdoctoral scholar at [Stanford University](https://www.stanford.edu/) and [Genentech Research and Early Development](https://www.gene.com/), hosted by [Jonathan Pritchard](https://web.stanford.edu/group/pritchardlab/pritchard.html) and [Aviv Regev](https://www.roche.com/about/governance/executive_committee/aviv-regev.html). I recently obtained my PhD degree from the department of Electrical Engineering and Computer Sciences at [UC Berkeley](https://eecs.berkeley.edu/), advised by [Mike Jordan](https://people.eecs.berkeley.edu/~jordan/) & [Nir Yosef](https://niryosef.wordpress.com/). My research interests lie at the intersection of statistics, computation and modeling with a focus on biological applications. 
 
-A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing biological data, with a focus on transcriptomics. I am a lead contributor to [single-cell variational inference (scvi-tools)](https://scvi-tools.org), a set of tools for fully-probabilistic modeling of scRNA-seq data. To learn more about scVI, check out this [Bioinformatics chat episode](https://bioinformatics.chat/scvi) or this [feature in Nature Methods](https://www.nature.com/articles/s41592-018-0230-9). 
+A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing single-cell omics data. I developed single-cell Variational Inference ([scVI](https://www.nature.com/articles/s41592-018-0230-9)), a flexible model and a scalable inference method for comprehensive analysis of single-cell transcriptomes. I co-developed [scvi-tools](https://scvi-tools.org), an open-source software suite for fully-probabilistic modeling of single-cell multi-omics data. You may learn more about these topics in my [guest lecture](https://www.youtube.com/watch?v=NNOkdgE4jNM&t=2783s) of the Deep Learning in the Life Sciences class at MIT. 
 
-Aside from that, I am interested in the broader area of ML + Science. Deep generative models provide an appealing and flexible paradigm for learning distributions, but quite some work is needed to fully exploit them as part of a [scientific hypothesis testing pipeline](https://www.embopress.org/doi/epdf/10.15252/msb.20199198) (e.g., interpretability, disentanglement, decision-making). 
+More generally, I am interested in the broader area of ML + Science. Deep generative models provide an appealing and flexible paradigm for learning distributions, but quite some work is needed to fully exploit them as part of a [scientific hypothesis testing pipeline](https://www.embopress.org/doi/epdf/10.15252/msb.20199198) (e.g., causality, interpretability, disentanglement, decision-making). 
 
-Previously, I worked on counterfactual inference and offline policy learning methods in collaboration with technology companies. In 2018, I visited [Le Song](https://www.cc.gatech.edu/~lsong/) at [Ant Financial]([https://www.antfin.com/index.htm?locale=en_us) in Hangzhou. In 2019, I visited [Inderjit Dhillon](https://www.cs.utexas.edu/~inderjit/) at [Amazon](https://www.aboutamazon.com/research) in Berkeley. 
-
-Before graduate school, I obtained a MSc in applied mathematics from [Ecole polytechnique, Palaiseau](https://www.polytechnique.edu) in 2016. Additionally, I worked as an intern at the [Harvard Medical School](https://hms.harvard.edu) with [Allon Klein](https://www.klein.hms.harvard.edu/) in 2016. I was born and grew up in Bedarieux, France. 
+Previously, I worked on counterfactual inference and offline policy learning methods in collaboration with technology companies. In 2018, I visited [Le Song](https://www.cc.gatech.edu/~lsong/) at [Ant Financial]([https://www.antfin.com/index.htm?locale=en_us) in Hangzhou. In 2019, I visited [Inderjit Dhillon](https://www.cs.utexas.edu/~inderjit/) at [Amazon](https://www.aboutamazon.com/research) in Berkeley. Before graduate school, I obtained a MSc in applied mathematics from [Ecole polytechnique, Palaiseau](https://www.polytechnique.edu) in 2016. Additionally, I worked as an intern at the [Harvard Medical School](https://hms.harvard.edu) with [Allon Klein](https://www.klein.hms.harvard.edu/) in 2016. I was born and grew up in [Bedarieux](https://en.wikipedia.org/wiki/B%C3%A9darieux), France. 
