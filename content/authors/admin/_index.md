@@ -10,14 +10,14 @@ authors:
 superuser: true
 
 # Role/position
-role: Postdoctoral Scholar
+role: Incoming Assistant Professor
 
 # Organizations/Affiliations
 organizations:
-- name: Genentech Research & Early Development
-  url: "https://www.gene.com/scientists"
-- name: Department of Genetics @ Stanford University
-  url: "https://med.stanford.edu/genetics.html"
+- name: Courant Institute of Mathematical Sciences @ NYU
+  url: "https://cims.nyu.edu/"
+- name: Department of Biology @ NYU
+  url: "https://as.nyu.edu/departments/biology.html"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests lie at the intersection of statistics, computation and modeling. A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing biological data, with a focus on single-cell transcriptomics.
@@ -58,7 +58,7 @@ social:
   link: https://github.com/romain-lopez
 - icon: cv
   icon_pack: ai
-  link: files/cv.pdf
+  link: https://biologicalml.org/uploads/resume.pdf
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 
@@ -73,10 +73,12 @@ user_groups:
 - Visitors
 ---
 
-Since Fall 2021, I am a joint postdoctoral scholar at [Stanford University](https://www.stanford.edu/) and [Genentech Research and Early Development](https://www.gene.com/), hosted by [Jonathan Pritchard](https://web.stanford.edu/group/pritchardlab/pritchard.html) and [Aviv Regev](https://www.roche.com/about/governance/executive_committee/aviv-regev.html). I recently obtained my PhD degree from the department of Electrical Engineering and Computer Sciences at [UC Berkeley](https://eecs.berkeley.edu/), advised by [Mike Jordan](https://people.eecs.berkeley.edu/~jordan/) & [Nir Yosef](https://niryosef.wordpress.com/). My research interests lie at the intersection of statistics, computation and modeling with a focus on biological applications. 
+Starting Fall 2025, I will join the [Courant Institute of Mathematical Sciences](https://cims.nyu.edu/) and the [Department of Biology](https://as.nyu.edu/departments/biology.html) at [New York University](https://www.nyu.edu/) as an Assistant Professor of Computer Science and Biology. Please check out the [webpage for the group](https://biologicalml.org/)!. My research interests lie at the intersection of statistics, computation and modeling with a focus on biological applications. 
 
-A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing single-cell omics data. I developed single-cell Variational Inference ([scVI](https://www.nature.com/articles/s41592-018-0230-9)), a flexible model and a scalable inference method for comprehensive analysis of single-cell transcriptomes. I co-developed [scvi-tools](https://scvi-tools.org), an open-source software suite for fully-probabilistic modeling of single-cell multi-omics data. You may learn more about these topics in my [guest lecture](https://www.youtube.com/watch?v=NNOkdgE4jNM&t=2783s) of the Deep Learning in the Life Sciences class at MIT. 
+In the meantime, I am still a Postdoctoral Fellow jointly appointed between [Genentech Research & Early Development](https://www.roche.com/innovation/structure/genentech) and the [Stanford University School of Medicine](https://med.stanford.edu/). I was hosted by [Jonathan Pritchard](https://web.stanford.edu/group/pritchardlab/pritchard.html) and [Aviv Regev](https://www.roche.com/about/leadership/aviv-regev). Before that, I obtained my PhD degree from the department of Electrical Engineering and Computer Sciences at [UC Berkeley](https://eecs.berkeley.edu/), advised by [Mike Jordan](https://people.eecs.berkeley.edu/~jordan/) & [Nir Yosef](https://yoseflab.github.io/). 
+
+A significant part of my research is driven by building more statistically accurate and faster machine learning software for analyzing single-cell omics data. I developed single-cell Variational Inference ([scVI](https://www.nature.com/articles/s41592-018-0229-2)), a flexible model and a scalable inference method for comprehensive analysis of single-cell transcriptomes. I co-developed [scvi-tools](https://scvi-tools.org), an open-source software suite for fully-probabilistic modeling of single-cell multi-omics data. You may learn more about these topics in my [guest lecture](https://www.youtube.com/watch?v=NNOkdgE4jNM&t=2783s) of the Deep Learning in the Life Sciences class at MIT. 
 
 More generally, I am interested in the broader area of ML + Science. Deep generative models provide an appealing and flexible paradigm for learning distributions, but quite some work is needed to fully exploit them as part of a [scientific hypothesis testing pipeline](https://www.embopress.org/doi/epdf/10.15252/msb.20199198) (e.g., causality, interpretability, disentanglement, decision-making). 
 
-Previously, I worked on counterfactual inference and offline policy learning methods in collaboration with technology companies. In 2018, I visited [Le Song](https://www.cc.gatech.edu/~lsong/) at [Ant Financial]([https://www.antfin.com/index.htm?locale=en_us) in Hangzhou. In 2019, I visited [Inderjit Dhillon](https://www.cs.utexas.edu/~inderjit/) at [Amazon](https://www.aboutamazon.com/research) in Berkeley. Before graduate school, I obtained a MSc in applied mathematics from [Ecole polytechnique, Palaiseau](https://www.polytechnique.edu) in 2016. Additionally, I worked as an intern at the [Harvard Medical School](https://hms.harvard.edu) with [Allon Klein](https://www.klein.hms.harvard.edu/) in 2016. I was born and grew up in [Bedarieux](https://en.wikipedia.org/wiki/B%C3%A9darieux), France. 
+Previously, I worked on counterfactual inference and offline policy learning methods in collaboration with technology companies. In 2018, I visited [Le Song](https://mbzuai.ac.ae/study/faculty/professor-le-song/) at the [Ant Group]([https://www.antgroup.com/en) in Hangzhou. In 2019, I visited [Inderjit Dhillon](https://oden.utexas.edu/people/directory/Inderjit-Dhillon/) at [Amazon Science](https://www.amazon.science/) in Berkeley. Before graduate school, I obtained a MSc in applied mathematics from [Ecole polytechnique, Palaiseau](https://www.polytechnique.edu) in 2016. Additionally, I worked as an intern at the [Harvard Medical School](https://hms.harvard.edu) with [Allon Klein](https://www.klein.hms.harvard.edu/) in 2016. I was born and grew up in [Bedarieux](https://en.wikipedia.org/wiki/B%C3%A9darieux), France. 

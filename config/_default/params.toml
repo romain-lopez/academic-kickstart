@@ -44,7 +44,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "I am a fifth year PhD candidate in the department of Electrical Engineering and Computer Sciences at UC Berkeley advised by Mike Jordan & Nir Yosef. My research interests lie at the intersection of statistics, computation and modeling."
+description = "I am an Assistant Professor at New York University. My research interests lie at the intersection of statistics, computation and modeling with a focus on biological applications."
 
 # Display a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
@@ -86,7 +86,7 @@ edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", repo_branch 
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "romain_lopez@berkeley.edu"
-phone = "650 422 9703"
+phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
@@ -110,7 +110,6 @@ address = {street = "378 Stanley Hall", city = "Berkeley", region = "CA", postco
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
   # {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/_romain_lopez_"},
-  # {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:romsss.34?call"},
   # {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
   # {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},

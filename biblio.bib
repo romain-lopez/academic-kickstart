@@ -3,35 +3,220 @@
 % Links to reproducibility code
 % Links to usable code? 
 
-
-@article {causaldag,
-  author = {\myname{} and Hütter, Jan-Christian and Pritchard, Jonathan K. and Regev, Aviv},
-  title = {Large-Scale Differentiable Causal Discovery of Factor Graphs},
-  year = {2022},
-  abtract = {A common theme in causal inference is learning causal relationships between observed variables, also known as causal discovery. This is usually a daunting task, given the large number of candidate causal graphs and the combinatorial nature of the search space. Perhaps for this reason, most research has so far focused on relatively small causal graphs, with up to hundreds of nodes. However, recent advances in fields like biology enable generating experimental data sets with thousands of interventions followed by rich profiling of thousands of variables, raising the opportunity and urgent need for large causal graph models. Here, we introduce the notion of factor directed acyclic graphs (f-DAGs) as a way to restrict the search space to non-linear low-rank causal interaction models. Combining this novel structural assumption with recent advances that bridge the gap between causal discovery and continuous optimization, we achieve causal discovery on thousands of variables. Additionally, as a model for the impact of statistical noise on this estimation procedure, we study a model of edge perturbations of the f-DAG skeleton based on random graphs and quantify the effect of such perturbations on the f-DAG rank. This theoretical analysis suggests that the set of candidate f-DAGs is much smaller than the whole DAG space and thus more statistically robust in the high-dimensional regime where the underlying skeleton is hard to assess. We propose Differentiable Causal Discovery of Factor Graphs (DCD-FG), a scalable implementation of f-DAG constrained causal discovery for high-dimensional interventional data. DCD-FG uses a Gaussian non-linear low-rank structural equation model and shows significant improvements compared to state-of-the-art methods in both simulations as well as a recent large-scale single-cell RNA sequencing data set with hundreds of genetic interventions.},
-     journal = {arXiv},
-  	url_pdf = {https://arxiv.org/abs/2206.07824},
-  month={June},
-	addendum = {\href{https://arxiv.org/abs/2206.07824}{\scriptsize [PDF]}},
-	keywords = {insubmission},
-}
-
-
-@article {Boyeau2022.05.27.493625,
-	author = {Boyeau, Pierre and Regier, Jeffrey and Gayoso, Adam and Jordan, Michael I. and \myname{}* and Yosef*, Nir},
-	title = {An empirical Bayes method for differential expression analysis of single cells with deep generative models},
-	year = {2022},
-	abstract = {Detecting differentially expressed genes is important for characterizing subpopulations of cells. In scRNA-seq data, however, nuisance variation due to technical factors like sequencing depth and RNA capture efficiency obscures the underlying biological signal. Deep generative models have been extensively applied to scRNA-seq data, with a special focus on embedding cells into a low-dimensional latent space and correcting for batch effects. However, little attention has been given to the problem of utilizing the uncertainty from the deep generative model for differential expression. Furthermore, the existing approaches do not allow controlling for the effect size or the false discovery rate. Here, we present lvm-DE, a generic Bayesian approach for performing differential expression from using a fitted deep generative model, while controlling the false discovery rate. We apply the lvm-DE framework to scVI and scSphere, two deep generative models. The resulting approaches outperform the state-of-the-art methods at estimating the log fold change in gene expression levels, as well as detecting differentially expressed genes between subpopulations of cells.},
-	journal = {bioRxiv},
-	url_pdf = {https://www.biorxiv.org/content/early/2022/05/29/2022.05.27.493625},
-  month={May},
-	addendum = {\href{https://www.biorxiv.org/content/early/2022/05/29/2022.05.27.493625}{\scriptsize [PDF]}},
+@article{luecken2024defining,
+  title={Defining and benchmarking open problems in single-cell analysis},
+  author={Luecken, Malte D and Gigante, Scott and Burkhardt, Daniel B and Cannoodt, Robrecht and Strobl, Daniel C and Markov, Nikolay S and Zappia, Luke and The Open Problems Jamboree Members and Others},
+  author+an = {8=highlight},
+  journal={Research Square},
+  year={2024},
+  abstract = {With the growing number of single-cell analysis tools, benchmarks are increasingly important to guide analysis and method development. However, a lack of standardisation and extensibility in current benchmarks limits their usability, longevity, and relevance to the community. We present Open Problems, a living, extensible, community-guided benchmarking platform including 10 current single-cell tasks that we envision will raise standards for the selection, evaluation, and development of methods in single-cell analysis.},
+  month={April},
+url_pdf = {https://www.researchsquare.com/article/rs-4181617/v1},
+addendum = {\href{https://www.researchsquare.com/article/rs-4181617/v1}{\scriptsize [PDF]}},
 	projects = "scVI",
 	keywords = {insubmission},
 }
 
-@article {Lopez2021.05.10.443517,
-	author = {\myname{}* and Li*, Baoguo and Keren-Shaul*, Hadas and Boyeau, Pierre and Kedmi, Merav and Pilzer, David and Jelinski, Adam and Yofe, Ido and David, Eyal and Wagner, Allon and Ergen, Can and Addadi, Yoseph and Golani, Ofra and Ronchese, Franca and Jordan, Michael I and Amit, Ido and Yosef, Nir},
+@article{bigverdi2024gene,
+  title={Gene-Level Representation Learning via Interventional Style Transfer in Optical Pooled Screening},
+  author={Bigverdi, Mahtab and Hockendorf, Burkhard and Yao, Heming and Hanslovsky, Phil and Romain Lopez and Richmond, David},
+  author+an = {5=highlight},
+  month={June},
+keywords = {workshop},
+url_pdf = {https://arxiv.org/abs/2406.07763},
+addendum = {\href{https://arxiv.org/abs/2406.07763}{\scriptsize [PDF]}},
+  journal={CVPR Workshop on Computer Vision for Microscopy Images},
+  year={2024},
+  abstract = {Optical pooled screening (OPS) combines automated microscopy and genetic perturbations to systematically study gene function in a scalable and cost-effective way. Leveraging the resulting data requires extracting biologically informative representations of cellular perturbation phenotypes from images. We employ a style-transfer approach to learn gene-level feature representations from images of genetically perturbed cells obtained via OPS. Our method outperforms widely used engineered features in clustering gene representations according to gene function, demonstrating its utility for uncovering latent biological relationships. This approach offers a promising alternative to investigate the role of genes in health and disease.},
+}
+
+
+@article{ryu2024crossmodality,
+      title={Cross-modality Matching and Prediction of Perturbation Responses with Labeled Gromov-Wasserstein Optimal Transport}, 
+      author+an = {2=highlight},
+      author={Jayoung Ryu and Romain Lopez and Charlotte Bunne and Aviv Regev},
+      year={2024},
+      journal={arXiv},
+      abstract = {It is now possible to conduct large scale perturbation screens with complex readout modalities, such as different molecular profiles or high content cell images. While these open the way for systematic dissection of causal cell circuits, integrated such data across screens to maximize our ability to predict circuits poses substantial computational challenges, which have not been addressed. Here, we extend two GromovWasserstein Optimal Transport methods to incorporate the perturbation label for cross-modality alignment. The obtained alignment is then employed to train a predictive model that estimates cellular responses to perturbations observed with only one measurement modality. We validate our method for the tasks of cross-modality alignment and cross-modality prediction in a recent multimodal single-cell perturbation dataset. Our approach opens the way to unified causal models of cell biology.},
+      keywords = {insubmission},
+      month={April},
+      url_pdf={https://arxiv.org/abs/2405.00838},
+      addendum = {\href{https://arxiv.org/abs/2405.00838}{\scriptsize [PDF]}. Selected for an oral presentation at the ICML AI4Science workshop.},
+}
+
+@article{theory-contrastive-clear,
+    author = {Romain Lopez and Huetter, Jan-Christian and Hajiramezanali, Ehsan and Pritchard, Jonathan and Regev, Aviv},
+  author+an = {1=highlight},
+    title = {Toward the Identifiability of Comparative Deep Generative Models},
+    journal = {Causal Learning and Reasoning},
+    year = {2024},
+    abstract ={Deep Generative Models (DGMs) are versatile tools for learning data representations while adequately incorporating domain knowledge such as the specification of conditional probability distributions. Recently proposed DGMs tackle the important task of comparing data sets from different sources. One such example is the setting of contrastive analysis that focuses on describing patterns that are enriched in a target data set compared to a background data set. The practical deployment of those models often assumes that DGMs naturally infer interpretable and modular latent representations, which is known to be an issue in practice. Consequently, existing methods often rely on ad-hoc regularization schemes, although without any theoretical grounding. Here, we propose a theory of identifiability for comparative DGMs by extending recent advances in the field of non-linear independent component analysis. We show that, while these models lack identifiability across a general class of mixing functions, they surprisingly become identifiable when the mixing function is piece-wise affine (e.g., parameterized by a ReLU neural network). We also investigate the impact of model misspecification, and empirically show that previously proposed regularization techniques for fitting comparative DGMs help with identifiability when the number of latent variables is not known in advance. Finally, we introduce a novel methodology for fitting comparative DGMs that improves the treatment of multiple data sources via multi-objective optimization and that helps adjust the hyperparameter for the regularization in an interpretable manner, using constrained optimization. We empirically validate our theory and new methodology using simulated data as well as a recent data set of genetic perturbations in cells profiled via single-cell RNA sequencing.},
+    keywords = {conference, featured},
+    month={April},
+url_pdf = {https://arxiv.org/abs/2401.15903},
+addendum = {\href{https://arxiv.org/abs/2401.15903}{\scriptsize [PDF]}},
+}
+
+
+@article {Multi-ContrastiveVAE-OPS,
+	author = {Zitong Jerry Wang and Romain Lopez and Jan-Christian H{\"u}tter and Takamasa Kudo and Heming Yao and Philipp Hanslovsky and Burkhard H{\"o}ckendorf and Aviv Regev},
+  author+an = {2=highlight},
+	title = {Multi-ContrastiveVAE disentangles perturbation effects in single cell images from optical pooled screens},
+	abstract = {Optical pooled screens (OPS) enable unbiased and cost-effective interrogation of gene function by generating images of millions of cells across thousands of perturbations. However, the analysis of OPS data remains a hurdle because it still mainly relies on hand-crafted features, which can be difficult to deploy across complex data sets. Additionally, most unsupervised feature extraction methods based on neural networks (such as auto-encoders) have difficulty isolating the effect of perturbations from the natural variations among cells. We therefore propose a contrastive analysis framework that is more effective at disentangling the phenotypes induced by perturbation from natural cell-cell heterogeneity present in an unperturbed cell population. By analyzing a significant data set of over 30 million cells across more than 5, 000 genetic perturbations, we demonstrate that our method significantly outperforms traditional methods in generating biologically-informative embeddings and mitigating technical artifacts. Furthermore, the interpretable part of our model enables us to pinpoint perturbations that generate novel phenotypes from the ones that only shift the distribution of existing phenotypes. Our approach can be readily applied to other small-molecule and genetic perturbation data sets with highly multiplexed images, enhancing the efficiency and precision in identifying and interpreting perturbation-specific phenotypic patterns, paving the way for deeper insights and discoveries in OPS analysis.},
+ 	year = {2024},
+	url_pdf = {https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.569094},
+	addendum = {\href{https://www.biorxiv.org/content/early/2023/11/29/2023.11.28.569094}{\scriptsize [PDF]}},
+project="scVI",
+	keywords = {workshop},
+	journal = {ICLR Workshop on Machine Learning for Genomics Explorations}
+}
+
+
+@article {sup-cavae-mlcb,
+	author = {Xinming Tu and Jan-Christian Hutter and Zitong Jerry Wang and Takamasa Kudo and Aviv Regev and Romain Lopez},
+  author+an = {6=highlight},
+	title = {A Supervised Contrastive Framework for Learning Disentangled Representations of Cell Perturbation Data},
+	year = {2023},
+	abstract = {CRISPR technology, combined with single-cell RNA-Seq, has opened the way to large scale pooled perturbation screens, allowing more systematic interrogations of gene functions in cells at scale. However, such Perturb-seq data poses many analysis challenges, due to its high-dimensionality, high level of technical noise, and variable Cas9 efficiency. The single-cell nature of the data also poses its own challenges, as we observe the heterogeneity of phenotypes in the unperturbed cells, along with the effect of the perturbations. All in all, these characteristics make it difficult to discern subtler effects. Existing tools, like mixscape and ContrastiveVI, provide partial solutions, but may oversimplify biological dynamics, or have low power to characterize perturbations with a smaller effect size. Here, we address these limitations by introducing the Supervised Contrastive Variational Autoencoder (SC- VAE). SC-VAE integrates guide RNA identity with gene expression data, ensuring a more discriminative analysis, and adopts the Hilbert-Schmidt Independence Criterion as a way to achieve disentangled representations, separating the heterogeneity in the control population from the effect of the perturbations. Evaluation on large-scale data sets highlights SC-VAE{\textquoteright}s superior sensitivity in identifying perturbation effects compared to ContrastiveVI, scVI and PCA. The perturbation embeddings better reflect known protein complexes (evaluated on CORUM), while its classifier offers promise in identifying assignment errors and cells escap- ing the perturbation phenotype. SC-VAE is readily applicable across diverse perturbation data sets.},
+	url_pdf = {https://www.biorxiv.org/content/early/2024/01/08/2024.01.05.574421},
+	addendum = {Selected for publication in the JMLR proceedings. \href{https://www.biorxiv.org/content/early/2024/01/08/2024.01.05.574421}{\scriptsize [PDF]}},
+	keywords = {workshop},
+journal={Machine Learning in Computational Biology (MLCB)},
+        month={December},
+}
+
+
+@article {iterpert-recomb,
+	author = {Kexin Huang and Romain Lopez and Jan-Christian H{\"u}tter and Takamasa Kudo and Antonio Rios and Aviv Regev},
+  author+an = {2=highlight},
+	title = {Sequential optimal experimental design of perturbation screens guided by multi-modal priors},
+	year = {2024},
+	abstract = {Understanding a cell{\textquoteright}s expression response to genetic perturbations helps to address important challenges in biology and medicine, including the function of gene circuits, discovery of therapeutic targets and cell reprogramming and engineering. In recent years, Perturb-seq, pooled genetic screens with single cell RNA-seq (scRNA-seq) readouts, has emerged as a common method to collect such data. However, irrespective of technological advances, because combinations of gene perturbations can have unpredictable, non-additive effects, the number of experimental configurations far exceeds experimental capacity, and for certain cases, the number of available cells. While recent machine learning models, trained on existing Perturb-seq data sets, can predict perturbation outcomes with some degree of accuracy, they are currently limited by sub-optimal training set selection and the small number of cell contexts of training data, leading to poor predictions for unexplored parts of perturbation space. As biologists deploy Perturb-seq across diverse biological systems, there is an enormous need for algorithms to guide iterative experiments while exploring the large space of possible perturbations and their combinations. Here, we propose a sequential approach for designing Perturb-seq experiments that uses the model to strategically select the most informative perturbations at each step for subsequent experiments. This enables a significantly more efficient exploration of the perturbation space, while predicting the effect of the rest of the unseen perturbations with high-fidelity. Analysis of a previous large-scale Perturb-seq experiment reveals that our setting is severely restricted by the number of examples and rounds, falling into a non-conventional active learning regime called {\textquotedblleft}active learning on a budget{\textquotedblright}. Motivated by this insight, we develop IterPert, a novel active learning method that exploits rich and multi-modal prior knowledge in order to efficiently guide the selection of subsequent perturbations. Using prior knowledge for this task is novel, and crucial for successful active learning on a budget. We validate IterPert using insilico benchmarking of active learning, constructed from a large-scale CRISPRi Perturb-seq data set. We find that IterPert outperforms other active learning strategies by reaching comparable accuracy at only a third of the number of perturbations profiled as the next best method. Overall, our results demonstrate the potential of sequentially designing perturbation screens through IterPert.},
+	url_pdf = {https://www.biorxiv.org/content/early/2023/12/13/2023.12.12.571389},
+	addendum = {Also presented during an oral presentation at Machine Learning in Computational Biology (MLCB 2023). \href{https://www.biorxiv.org/content/early/2023/12/13/2023.12.12.571389}{\scriptsize [PDF]}},
+	keywords = {conference},
+	journal = {Research in Computational Molecular Biology
+ (RECOMB)}
+}
+
+@article{ghari2023generative,
+  title={Generative Flow Networks Assisted Biological Sequence Editing},
+  author={Ghari, Pouya M and Tseng, Alex and Eraslan, G{\"o}kcen and Romain Lopez and Biancalani, Tommaso and Scalia, Gabriele and Hajiramezanali, Ehsan},
+  author+an = {4=highlight},
+  year={2023},
+abstract = {Editing biological sequences has extensive applications in synthetic biology and medicine, such as designing regulatory elements for nucleic-acid therapeutics and treating genetic disorders. The primary objective in biological-sequence editing is to determine the optimal modifications to a sequence which augment certain biological properties while adhering to a minimal number of alterations to ensure safety and predictability. In this paper, we propose GFNSeqEditor, a novel biological-sequence editing algorithm which builds on the recently proposed area of generative flow networks (GFlowNets). Our proposed GFNSeqEditor identifies elements within a starting seed sequence that may compromise a desired biological property. Then, using a learned stochastic policy, the algorithm makes edits at these identified locations, offering diverse modifications for each sequence in order to enhance the desired property. Notably, GFNSeqEditor prioritizes edits with a higher likelihood of substantially improving the desired property. Furthermore, the number of edits can be regulated through specific hyperparameters. We conducted extensive experiments on a range of real-world datasets and biological applications, and our results underscore the superior performance of our proposed algorithm compared to existing state-of-the-art sequence editing methods.},
+	journal = {NeurIPS Workshop on Generative AI and Biology},
+	url_pdf = {https://openreview.net/pdf?id=9BQ3l8OVru},
+  month={November},
+	addendum = {\href{https://openreview.net/pdf?id=9BQ3l8OVru}{\scriptsize [PDF]}},
+project="science",
+	keywords = {workshop},
+}
+
+@article {de-journal,
+	author = {Boyeau, Pierre and Regier, Jeffrey and Gayoso, Adam and Jordan, Michael I. and Romain Lopez* and Yosef*, Nir},
+  author+an = {5=highlight},
+	title = {An empirical Bayes method for differential expression analysis of single cells with deep generative models},
+	year = {2023},
+	abstract = {Detecting differentially expressed genes is important for characterizing subpopulations of cells. In scRNA-seq data, however, nuisance variation due to technical factors like sequencing depth and RNA capture efficiency obscures the underlying biological signal. Deep generative models have been extensively applied to scRNA-seq data, with a special focus on embedding cells into a low-dimensional latent space and correcting for batch effects. However, little attention has been given to the problem of utilizing the uncertainty from the deep generative model for differential expression. Furthermore, the existing approaches do not allow controlling for the effect size or the false discovery rate. Here, we present lvm-DE, a generic Bayesian approach for performing differential expression from using a fitted deep generative model, while controlling the false discovery rate. We apply the lvm-DE framework to scVI and scSphere, two deep generative models. The resulting approaches outperform the state-of-the-art methods at estimating the log fold change in gene expression levels, as well as detecting differentially expressed genes between subpopulations of cells.},
+	journal = {Proceedings of the National Academy of Sciences},
+	url_pdf = {https://www.pnas.org/doi/10.1073/pnas.2209124120},
+  month={January},
+	addendum = {\href{https://www.pnas.org/doi/10.1073/pnas.2209124120}{\scriptsize [PDF]}},
+	projects = "scVI",
+	keywords = {journal},
+}
+
+
+
+@Article{scverse,
+author={Isaac Virshup and Danila Bredikhin and Lukas Heumos and Giovanni Palla and Gregor Sturm and Adam Gayoso and Ilia Kats and Mikaela Koutrouli and Scverse Community and Others
+},
+  author+an = {9=highlight},
+title={The scverse project provides a computational ecosystem for single-cell omics data analysis},
+journal={Nature Biotechnology},
+year={2023},
+month={April},
+url_pdf = {https://doi.org/10.1038/s41587-023-01733-8},
+	addendum = {\href{https://doi.org/10.1038/s41587-023-01733-8}{\scriptsize [PDF]}},
+	projects = "scVI",
+	keywords = {journal},
+}
+
+
+@article{nodags,
+title={NODAGS-Flow: Nonlinear cyclic causal structure learning},
+  author+an = {2=highlight},
+author={Sethuraman, Muralikrishnna G. and Romain Lopez and Mohan, Rahul and Fekri, Faramarz and Biancalani, Tommaso and Hütter, Jan-Christian},
+journal={International Conference on Artificial Intelligence and Statistics},
+year={2023},
+abstract = {Learning causal relationships between variables is a well-studied problem in statistics, with many important applications in science. However, modeling real-world systems remain challenging, as most existing algorithms assume that the underlying causal graph is acyclic. While this is a convenient framework for developing theoretical developments about causal reasoning and inference, the underlying modeling assumption is likely to be violated in real systems, because feedback loops are common (e.g., in biological systems). Although a few methods search for cyclic causal models, they usually rely on some form of linearity, which is also limiting, or lack a clear underlying probabilistic model. In this work, we propose a novel framework for learning nonlinear cyclic causal graphical models from interventional data, called NODAGS-Flow. We perform inference via direct likelihood optimization, employing techniques from residual normalizing flows for likelihood estimation. Through synthetic experiments and an application to single-cell high-content perturbation screening data, we show significant performance improvements with our approach compared to state-of-the-art methods with respect to structure recovery and predictive performance.},
+project = "science",
+keywords = {conference},
+month={april},
+url_pdf = {https://proceedings.mlr.press/v206/sethuraman23a},
+url_code={},
+addendum = {\href{https://proceedings.mlr.press/v206/sethuraman23a}{\scriptsize [PDF]}},
+}
+
+@article{svaepconf,
+title={Learning causal representations of single cells via sparse mechanism shift modeling},
+  author+an = {1=highlight},
+author={Romain Lopez* and Natasa Tagasovska* and Stephen Ra and Kyunghyun Cho and Jonathan K. Pritchard and Aviv Regev},
+journal={Conference on Causal Learning and Reasoning},
+year={2023},
+abstract = {Latent variable models have become a go-to tool for analyzing biological data, especially in the field of single-cell genomics. One remaining challenge is the identification of individual latent variables related to biological pathways, more generally conceptualized as disentanglement. Although versions of variational autoencoders that explicitly promote disentanglement were introduced and applied to single-cell genomics data, the theoretical feasibility of disentanglement from independent and identically distributed measurements has been challenged. Recent methods propose instead to leverage non-stationary data, as well as the sparse mechanism assumption in order to learn disentangled representations, with a causal semantic. Here, we explore the application of these methodological advances in the analysis of single-cell genomics data with genetic or chemical perturbations. We benchmark these methods on simulated single cell expression data to evaluate their performance regarding disentanglement, causal target identification and out-of-domain generalisation. Finally, by applying the approaches to a large-scale gene perturbation data set, we find that the model relying on the sparse mechanism shift hypothesis surpasses contemporary methods on a transfer learning task.},
+project = "science",
+keywords = {conference},
+url_pdf = {https://proceedings.mlr.press/v213/lopez23a},
+url_code={https://github.com/Genentech/sVAE},
+month={April},
+addendum = {Also presented at the NeurIPS Workshop on Causality for Real-world Impact 2022. \href{https://proceedings.mlr.press/v213/lopez23a}{\scriptsize [PDF]}},
+}
+
+@article{mgvi,
+title={Disentangling shared and group-specific variations in single-cell transcriptomics data with multiGroupVI},
+  author+an = {2=highlight},
+author={Ethan Weinberger and Romain Lopez and Jan-Christian Hütter and Aviv Regev},
+journal={Machine Learning in Computational Biology (MLCB)},
+year={2022},
+abstract = {Single-cell RNA sequencing (scRNA-seq) technologies have enabled a greater understanding of previously unexplored biological diversity. Based on the design of such experiments, individual cells
+from scRNA-seq datasets can often be attributed to non-overlapping “groups”. For example, these
+group labels may denote the cell’s tissue or cell line of origin. In this setting, one important problem
+consists in discerning patterns in the data that are shared across groups versus those that are group-
+specific. However, existing methods for this type of analysis are mainly limited to (generalized) linear
+latent variable models. Here we introduce multiGroupVI, a deep generative model for analyzing
+grouped scRNA-seq datasets that decomposes the data into shared and group-specific factors of
+variation. We first validate our approach on a simulated dataset, on which we significantly outperform
+state-of-the-art methods. We then apply it to explore regional differences in an scRNA-seq dataset
+sampled from multiple regions of the mouse small intestine.},
+project = "science",
+keywords = {workshop},
+month={December},
+url_pdf = {https://proceedings.mlr.press/v200/weinberger22a.html},
+url_code={https://github.com/Genentech/multiGroupVI},
+addendum = {Selected for an oral presentation, and for publication in the JMLR proceedings. \href{https://proceedings.mlr.press/v200/weinberger22a.html}{\scriptsize [PDF]}},
+}
+
+@article {causaldag,
+  author = {Romain Lopez and Huetter, Jan-Christian and Pritchard, Jonathan K. and Regev, Aviv},
+  author+an = {1=highlight},
+  title = {Large-scale differentiable causal discovery of factor graphs},
+  year = {2022},
+  abstract = {A common theme in causal inference is learning causal relationships between observed variables, also known as causal discovery. This is usually a daunting task, given the large number of candidate causal graphs and the combinatorial nature of the search space. Perhaps for this reason, most research has so far focused on relatively small causal graphs, with up to hundreds of nodes. However, recent advances in fields like biology enable generating experimental data sets with thousands of interventions followed by rich profiling of thousands of variables, raising the opportunity and urgent need for large causal graph models. Here, we introduce the notion of factor directed acyclic graphs (f-DAGs) as a way to restrict the search space to non-linear low-rank causal interaction models. Combining this novel structural assumption with recent advances that bridge the gap between causal discovery and continuous optimization, we achieve causal discovery on thousands of variables. Additionally, as a model for the impact of statistical noise on this estimation procedure, we study a model of edge perturbations of the f-DAG skeleton based on random graphs and quantify the effect of such perturbations on the f-DAG rank. This theoretical analysis suggests that the set of candidate f-DAGs is much smaller than the whole DAG space and thus more statistically robust in the high-dimensional regime where the underlying skeleton is hard to assess. We propose Differentiable Causal Discovery of Factor Graphs (DCD-FG), a scalable implementation of f-DAG constrained causal discovery for high-dimensional interventional data. DCD-FG uses a Gaussian non-linear low-rank structural equation model and shows significant improvements compared to state-of-the-art methods in both simulations as well as a recent large-scale single-cell RNA sequencing data set with hundreds of genetic interventions.},
+projects = "science",
+keywords = {conference, featured},
+journal = {Advances in Neural Information Processing Systems},
+  	url_pdf = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/7a8fa1382ea068f3f402b72081df16be-Abstract-Conference.html},
+  url_code={https://github.com/Genentech/dcdfg},
+  month={November},
+	addendum = {\href{https://proceedings.neurips.cc/paper_files/paper/2022/hash/7a8fa1382ea068f3f402b72081df16be-Abstract-Conference.html}{\scriptsize [PDF]}},
+	keywords = {conference},
+}
+
+@article {destvi,
+	author = {Romain Lopez* and Li*, Baoguo and Keren-Shaul*, Hadas and Boyeau, Pierre and Kedmi, Merav and Pilzer, David and Jelinski, Adam and Yofe, Ido and David, Eyal and Wagner, Allon and Ergen, Can and Addadi, Yoseph and Golani, Ofra and Ronchese, Franca and Jordan, Michael I and Amit, Ido and Yosef, Nir},
+  author+an = {1=highlight},
 	title = {DestVI identifies continuums of cell types in spatial transcriptomics data},
 	year = {2022},
 	abstract = {The function of mammalian cells is largely influenced by their tissue microenvironment. Advances in spatial transcriptomics open the way for studying these important determinants of cellular function by enabling a transcriptome-wide evaluation of gene expression in situ. A critical limitation of the current technologies, however, is that their resolution is limited to niches (spots) of sizes well beyond that of a single cell, thus providing measurements for cell aggregates which may mask critical interactions between neighboring cells of different types. While joint analysis with single-cell RNA-sequencing (scRNA-seq) can be leveraged to alleviate this problem, current analyses are limited to a discrete view of cell type proportion inside every spot. This limitation becomes critical in the common case where, even within a cell type, there is a continuum of cell states that cannot be clearly demarcated but reflects important differences in the way cells function and interact with their surroundings. To address this, we developed Deconvolution of Spatial Transcriptomics profiles using Variational Inference (DestVI), a probabilistic method for multi-resolution analysis for spatial transcriptomics that explicitly models continuous variation within cell types. Using simulations, we demonstrate that DestVI is capable of providing higher resolution compared to the existing methods and that it can estimate gene expression by every cell type inside every spot. We then introduce an automated pipeline that uses DestVI for analysis of single tissue slices and comparison between tissues. We apply this pipeline to study the immune crosstalk within lymph nodes to infection and explore the spatial organization of a mouse tumor model. In both cases, we demonstrate that DestVI can provide a high resolution and accurate spatial characterization of the cellular organization of these tissues, and that it is capable of identifying important cell-type-specific changes in gene expression - between different tissue regions or between conditions. DestVI is available as an open-source software package in the scvi-tools codebase (https://scvi-tools.org).},
@@ -44,7 +229,8 @@
 }
 
 @article {scvitools,
-	author = {Gayoso*, Adam and \myname{}* and Xing*, Galen and Boyeau, Pierre and Wu, Katherine and Jayasuriya, Michael and Mehlman, Edouard and Langevin, Maxime and Liu, Yining and Samaran, Jules and Misrachi, Gabriel and Nazaret, Achille and Clivio, Oscar and Xu, Chenling and Ashuach, Tal and Gabitto, Mariano and Lotfollahi, Mohammad and Svensson, Valentine and da Veiga Beltrame, Eduardo and Kleshchevnikov, Vitalii and Talavera-Lopez, Carlos and Pachter, Lior and Theis, Fabian J and Streets, Aaron and Jordan, Michael I. and Regier, Jeffrey and Yosef, Nir},
+	author = {Gayoso*, Adam and Romain Lopez* and Xing*, Galen and Boyeau, Pierre and Wu, Katherine and Jayasuriya, Michael and Mehlman, Edouard and Langevin, Maxime and Liu, Yining and Samaran, Jules and Misrachi, Gabriel and Nazaret, Achille and Clivio, Oscar and Xu, Chenling and Ashuach, Tal and Gabitto, Mariano and Lotfollahi, Mohammad and Svensson, Valentine and da Veiga Beltrame, Eduardo and Kleshchevnikov, Vitalii and Talavera-Lopez, Carlos and Pachter, Lior and Theis, Fabian J and Streets, Aaron and Jordan, Michael I. and Regier, Jeffrey and Yosef, Nir},
+  author+an = {2=highlight},
 	title = {A Python library for probabilistic analysis of single-cell omics data},
 	url_pdf = {https://www.nature.com/articles/s41587-021-01206-w},
 	addendum = {Received an Essential Open Source Software for Science grant from CZI. \href{https://www.nature.com/articles/s41587-021-01206-w}{\scriptsize [PDF]}},
@@ -56,8 +242,9 @@
 	abstract = {Probabilistic models have provided the underpinnings for state-of-the-art performance in many single-cell omics data analysis tasks, including dimensionality reduction, clustering, differential expression, annotation, removal of unwanted variation, and integration across modalities. Many of the models being deployed are amenable to scalable stochastic inference techniques, and accordingly they are able to process single-cell datasets of realistic and growing sizes. However, the community-wide adoption of probabilistic approaches is hindered by a fractured software ecosystem resulting in an array of packages with distinct, and often complex interfaces. To address this issue, we developed scvi-tools (https://scvi-tools.org), a Python package that implements a variety of leading probabilistic methods. These methods, which cover many fundamental analysis tasks, are accessible through a standardized, easy-to-use interface with direct links to Scanpy, Seurat, and Bioconductor workflows. By standardizing the implementations, we were able to develop and reuse novel functionalities across different models, such as support for complex study designs through nonlinear removal of unwanted variation due to multiple covariates and reference-query integration via scArches. The extensible software building blocks that underlie scvi-tools also enable a developer environment in which new probabilistic models for single cell omics can be efficiently developed, benchmarked, and deployed. We demonstrate this through a code-efficient reimplementation of Stereoscope for deconvolution of spatial transcriptomics profiles. By catering to both the end user and developer audiences, we expect scvi-tools to become an essential software dependency and serve to formulate a community standard for probabilistic modeling of single cell omics.},
 }
 
-@article {Ouardini2021.05.28.446021,
-	author = {Ouardini, Khalil and \myname{} and Jones, Matthew G. and Prillo, Sebastian and Zhang, Richard and Jordan, Michael I. and Yosef, Nir},
+@article {treevae,
+	author = {Ouardini, Khalil and Romain Lopez and Jones, Matthew G. and Prillo, Sebastian and Zhang, Richard and Jordan, Michael I. and Yosef, Nir},
+  author+an = {2=highlight},
 	title = {Reconstructing unobserved cellular states from paired single-cell lineage tracing and transcriptomics data},
 	year = {2021},
 	abstract = {Novel experimental assays now simultaneously measure lineage relationships and transcriptomic states from single cells, thanks to CRISPR/Cas9-based genome engineering. These multimodal measurements allow researchers not only to build comprehensive phylogenetic models relating all cells but also infer transcriptomic determinants of consequential subclonal behavior. The gene expression data, however, is limited to cells that are currently present ("leaves" of the phylogeny). As a consequence, researchers cannot form hypotheses about unobserved, or "ancestral", states that gave rise to the observed population. To address this, we introduce TreeVAE: a probabilistic framework for estimating ancestral transcriptional states. TreeVAE uses a variational autoencoder (VAE) to model the observed transcriptomic data while accounting for the phylogenetic relationships between cells. Using simulations, we demonstrate that TreeVAE outperforms benchmarks in reconstructing ancestral states on several metrics. TreeVAE also provides a measure of uncertainty, which we demonstrate to correlate well with its prediction accuracy. This estimate therefore potentially provides a data-driven way to estimate how far back in the ancestor chain predictions could be made. Finally, using real data from lung cancer metastasis, we show that accounting for phylogenetic relationship between cells improves goodness of fit. Together, TreeVAE provides a principled framework for reconstructing unobserved cellular states from single cell lineage tracing data.},
@@ -70,7 +257,8 @@
 }
 
 @article{thesis,
-  author    = {\myname{}},
+  author    = {Romain Lopez},
+  author+an = {1=highlight},
   title     = {{Charting Cellular States, One Cell at a Time: Computational, Inferential and Modeling Perspectives}},
   journal   = {eScholarship},
   month={May},
@@ -85,24 +273,26 @@ In a second line of work, we expose two pathological behaviors of variational in
 }
 
 @article{POXM,
-  author    = {\myname{} and
+  author    = {Romain Lopez and
                Inderjit Dhillon and
                Michael I. Jordan},
+  author+an = {1=highlight},
   title     = {{Learning from eXtreme bandit feedback}},
   journal   = {AAAI Conference on Artificial Intelligence}, 
   month={February},
   year      = {2021},
   projects="counterfactuals",
   keywords = {conference},
-  addendum={Selected for a Best Paper Award Honorable Mention. \href{https://arxiv.org/abs/2009.12947}{\scriptsize [PDF]}},
-url_pdf = {https://arxiv.org/abs/2009.12947},
+  addendum={Selected for a Best Paper Award Honorable Mention. \href{https://ojs.aaai.org/index.php/AAAI/article/view/17058}{\scriptsize [PDF]}},
+url_pdf = {https://ojs.aaai.org/index.php/AAAI/article/view/17058},
 abstract="We study the problem of batch learning from bandit feedback in the setting of extremely large action spaces. Learning from extreme bandit feedback is ubiquitous in recommendation systems, in which billions of decisions are made over millions of choices in a single day, yielding massive observational data. In these large-scale real-world applications, supervised learning approaches such as eXtreme Multi-label Classification (XMC) remain the standard approach despite the bias inherent in the data collection process. Conversely, previously developed importance sampling approaches are unbiased but suffer from impractical variance when dealing with a large number of actions. 
 In this paper, we introduce a selective importance sampling estimator (sIS) with more favorable bias-variance tradeoff. Specifically, sIS is obtained by performing importance sampling on the conditional expectation of the reward with respect to a small subset of actions for each instance (a form of Rao-Blackwellization). We employ this estimator in a novel algorithmic procedure---named Policy Optimization for eXtreme Models (POXM)---for learning from bandit feedback on XMC tasks. In POXM, the selected actions for the sIS estimator are the top-p actions of the logging policy, where p is adjusted from the data and is significantly smaller than the size of the action space. 
 We use a supervised-to-bandit conversion on three XMC datasets to benchmark our POXM method against BanditNet, a previously applied partial matching pruning strategy as well as a supervised learning baseline. Whereas BanditNet sometimes improves marginally over the logging policy, our experiments show that POXM systematically and significantly improves over all baselines."
 }
 
 @article {totalVIjournal,
-	author = {Gayoso*, Adam and Steier*, Zo{\"e} and \myname{} and Regier, Jeffrey and Nazor, Kristopher L. and Streets, Aaron and Yosef, Nir},
+	author = {Gayoso*, Adam and Steier*, Zo{\"e} and Romain Lopez and Regier, Jeffrey and Nazor, Kristopher L. and Streets, Aaron and Yosef, Nir},
+  author+an = {3=highlight},
 	title = {Joint probabilistic modeling of single-cell multi-omic data with totalVI},
 	journal = {Nature Methods},
 	month={February},
@@ -116,7 +306,8 @@ We use a supervised-to-bandit conversion on three XMC datasets to benchmark our 
 }
 
 @article{scanvi,
-author = {Chenling Xu* and \myname{}* and Edouard Mehlman* and Jeffrey Regier and Michael I. Jordan and Nir Yosef},
+author = {Chenling Xu* and Romain Lopez* and Edouard Mehlman* and Jeffrey Regier and Michael I. Jordan and Nir Yosef},
+  author+an = {2=highlight},
 journal = {Molecular Systems Biology},
 title = {{Probabilistic harmonization and annotation of single-cell transcriptomics data with deep generative models}},
 month={January},
@@ -137,14 +328,15 @@ abstract="As single-cell transcriptomics becomes a mainstream technology, the na
 %
 
 @article{decision_making,
-author = {\myname{} and Pierre Boyeau and Nir Yosef and Michael I. Jordan and Jeffrey Regier}, 
+author = {Romain Lopez and Pierre Boyeau and Nir Yosef and Michael I. Jordan and Jeffrey Regier}, 
+  author+an = {1=highlight},
 title = {Decision-making with auto-encoding variational Bayes},
 projects = "science",
 keywords = {conference, featured},
 journal = {Advances in Neural Information Processing Systems},
 year = {2020}, 
 month = {November},
-addendum={\href{https://papers.nips.cc/paper/2020/hash/357a6fdf7642bf815a88822c447d9dc4-Abstract.html}{\scriptsize [PDF]}},
+addendum={\href{https://proceedings.neurips.cc/paper/2020/hash/357a6fdf7642bf815a88822c447d9dc4-Abstract.html}{\scriptsize [PDF]}},
 url_pdf = {https://papers.nips.cc/paper/2020/hash/357a6fdf7642bf815a88822c447d9dc4-Abstract.html},
 url_code= {https://github.com/PierreBoyeau/decision-making-vaes},
 abstract = {To make decisions based on a model fit by auto-encoding variational Bayes (AEVB), practitioners often let the variational distribution serve as a surrogate for the posterior distribution. This approach yields biased estimates of the expected risk, and therefore poor decisions for two reasons. First, the model fit by AEVB may yield biased statistics relative to the underlying data distribution. Second, there may be strong discrepancies between the variational distribution and the posterior. 
@@ -153,7 +345,8 @@ For a particular model that is amenable to analysis, we investigate how importan
 Our theoretical results suggest that a posterior approximation distinct from the variational distribution should be used for making decisions. Motivated by these theoretical results, we propose learning several approximate proposals for the best model and combining them using multiple importance sampling for decision-making. In addition to toy examples, we present a full-fledged case study of single-cell RNA sequencing. In this challenging instance of multiple hypothesis testing, our proposed approach surpasses the current state of the art.}}
 
 @article{review_paper,
-author = {\myname{} and Adam Gayoso and Nir Yosef},
+author = {Romain Lopez and Adam Gayoso and Nir Yosef},
+  author+an = {1=highlight},
 keywords = {review,featured},
 journal = {Molecular Systems Biology},
 title = {{Enhancing scientiﬁc discoveries in molecular biology with deep generative models}},
@@ -166,7 +359,8 @@ abstract = "Generative models provide a well established statistical framework f
 }
 
 @article{CCPOvSIRE,
-author = {\myname{} and Chenchen Li and Xiang Yan and Junwu Xiong and Michael I. Jordan and Yuan Qi and Le Song},
+author = {Romain Lopez and Chenchen Li and Xiang Yan and Junwu Xiong and Michael I. Jordan and Yuan Qi and Le Song},
+  author+an = {1=highlight},
 keywords = {conference},
 journal = {AAAI Conference on Artificial Intelligence},
 title = {{Cost-effective incentive allocation via structured counterfactual inference}},
@@ -183,7 +377,8 @@ abstract="We address a practical problem ubiquitous in modern industry, in which
 %
 
 @article{lfc_change,
-author = {Pierre Boyeau and \myname{} and Jeffrey Regier and Adam Gayoso and Michael I. Jordan and Nir Yosef},
+author = {Pierre Boyeau and Romain Lopez and Jeffrey Regier and Adam Gayoso and Michael I. Jordan and Nir Yosef},
+  author+an = {2=highlight},
 keywords = {workshop},
 journal = {Machine Learning in Computational Biology (MLCB)},
 title = {{Deep generative models for detecting differential expression in single cells}},
@@ -197,7 +392,8 @@ abstract = "Detecting differentially expressed genes is important for characteri
 }
 
 @article{AutoZI,
-author = {Oscar Clivio and \myname{} and Jeffrey Regier and Adam Gayoso and Michael I. Jordan and Nir Yosef},
+author = {Oscar Clivio and Romain Lopez and Jeffrey Regier and Adam Gayoso and Michael I. Jordan and Nir Yosef},
+  author+an = {2=highlight},
 keywords = {workshop},
 journal = {Machine Learning in Computational Biology (MLCB)},
 title = {{Detecting zero-inflated genes in single-cell transcriptomics data}},
@@ -211,7 +407,8 @@ abstract = "In single-cell RNA sequencing data, biological processes or technica
 }
 
 @article{totalVIMLCB,
-author = {Adam Gayoso and \myname{} and Zo\"{e} Steier and Jeffrey Regier and Aaron Streets and Nir Yosef},
+author = {Adam Gayoso and Romain Lopez and Zo\"{e} Steier and Jeffrey Regier and Aaron Streets and Nir Yosef},
+  author+an = {2=highlight},
 keywords = {workshop},
 journal = {Machine Learning in Computational Biology (MLCB)},
 title = {{A joint model of RNA expression and surface protein abundance in single cells}},
@@ -226,7 +423,8 @@ abstract = "Cellular indexing of transcriptomes and epitopes by sequencing (CITE
 
 @article{gimVI,
   title={A joint model of unpaired data from scRNA-seq and spatial transcriptomics for imputing missing gene expression measurements},
-  author={\myname{}* and Nazaret*, Achille and Langevin*, Maxime and Samaran*, Jules and Regier*, Jeffrey and Jordan, Michael I. and Yosef, Nir},
+  author={Romain Lopez* and Nazaret*, Achille and Langevin*, Maxime and Samaran*, Jules and Regier*, Jeffrey and Jordan, Michael I. and Yosef, Nir},
+  author+an = {1=highlight},
   journal={ICML Workshop in Computational Biology},
   year={2019},
 month={October},
@@ -239,7 +437,8 @@ projects="scVI",
 }
 
 @article{scrublet,
-author = {Wolock, Samuel L. and \myname{} and Klein, Allon M.},
+author = {Wolock, Samuel L. and Romain Lopez and Klein, Allon M.},
+  author+an = {2=highlight},
 journal = {Cell Systems},
 title = {{Scrublet: computational identification of cell doublets in single-cell transcriptomic data}},
 year = {2019},
@@ -257,7 +456,8 @@ abstract="Single-cell RNA-sequencing has become a widely used, powerful approach
 %
 
 @ARTICLE{HCV_NIPS,
-   author = {\myname{} and {Regier}, Jeffrey and {Jordan}, Michael I. and {Yosef}, Nir},
+   author = {Romain Lopez and {Regier}, Jeffrey and {Jordan}, Michael I. and {Yosef}, Nir},
+  author+an = {1=highlight},
     title = "{Information constraints on auto-encoding variational Bayes}",
     projects="science",
   journal = {Advances in Neural Information Processing Systems},
@@ -271,8 +471,9 @@ month={November},
 }
 
 @article {scVI,
-	author = {\myname{} and Regier, Jeffrey and Cole, Michael B. and Jordan, Michael I. and Yosef, Nir},
+	author = {Romain Lopez and Regier, Jeffrey and Cole, Michael B. and Jordan, Michael I. and Yosef, Nir},
 	title = {{Deep generative modeling for single-cell transcriptomics}},
+  author+an = {1=highlight},
 	year = {2018},
 month={December},
     journal = {{Nature} {Methods}},
@@ -285,7 +486,8 @@ month={December},
 }
 
 @article{noisy_labels,
-author = {Maxime Langevin and Edouard Mehlman and Jeffrey Regier and \myname{} and Michael I. Jordan and Nir Yosef},
+author = {Maxime Langevin and Edouard Mehlman and Jeffrey Regier and Romain Lopez and Michael I. Jordan and Nir Yosef},
+author+an = {4=highlight},
 journal = {Bay Area Machine Learning Symposium},
 title = {{A deep generative model for semi-supervised classification with noisy labels}},
 year = {2018},
@@ -302,10 +504,11 @@ abstract="Class labels are often imperfectly observed, due to mistakes and to ge
 %
 
 @article{scVIworkshop,
-  author    = {\myname{} and
+  author    = {Romain Lopez and
                Jeffrey Regier and
                Michael I. Jordan and
                Nir Yosef},
+  author+an = {1=highlight},
   title     = {{A deep generative model for gene expression profiles from single-cell
                RNA sequencing with application to differential expression}},
   journal   = {NeurIPS Machine Learning workshop in Computational Biology},
@@ -321,10 +524,11 @@ abstract="We propose a probabilistic model for interpreting gene expression leve
 
 
 @article{scVIworkshopbaylearn,
-  author    = {\myname{} and
+  author    = {Romain Lopez and
                Jeffrey Regier and
                Michael I. Jordan and
                Nir Yosef},
+  author+an = {1=highlight},
   title     = {{A deep generative model for gene expression profiles from single-cell
                RNA sequencing}},
   journal   = {Bay Area Machine Learning Symposium},
@@ -337,7 +541,6 @@ url_code={https://github.com/YosefLab/scvi-tools},
 projects="scVI",
 abstract="We propose a probabilistic model for interpreting gene expression levels that are observed through single-cell RNA sequencing. In the model, each cell has a low-dimensional latent representation. Additional latent variables account for technical effects that may erroneously set some observations of gene expression levels to zero. Conditional distributions are specified by neural networks, giving the proposed model enough flexibility to fit the data well. We use variational inference and stochastic optimization to approximate the posterior distribution. The inference procedure scales to over one million cells, whereas competing algorithms do not. Even for smaller datasets, for several tasks, the proposed procedure outperforms state-of-the-art methods like ZIFA and ZINB-WaVE.",
 }
-
 
 
 
